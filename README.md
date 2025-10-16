@@ -1,9 +1,11 @@
 # 🔍 Ejemplos de Búsqueda Bidireccional en Angular
 
-Aplicación interactiva que demuestra visualmente el algoritmo de **búsqueda bidireccional** en dos contextos diferentes:
+Aplicación interactiva que demuestra visualmente el algoritmo de **búsqueda bidireccional** en cuatro contextos diferentes:
 
 1. **🎨 Grafo 3D Abstracto** - Visualización de nodos en Three.js
-2. **🎯 Laberinto (Maze)** - Pathfinding en grid 2D
+2. **🎯 Laberinto 2D (Maze)** - Pathfinding en grid 2D con Canvas
+3. **🎲 Laberinto 3D Multi-nivel** - Nodos esféricos en espacio 3D
+4. **📊 Análisis de Ventas** - Procesamiento bidireccional de datos ⭐ NUEVO
 
 ## ✨ Características Principales
 
@@ -27,7 +29,7 @@ Aplicación interactiva que demuestra visualmente el algoritmo de **búsqueda bi
 - **Comparación con BFS unidireccional:** Métricas de eficiencia
 - **Tamaños ajustables:** 15x15, 25x25, 35x35
 
-### 🎲 Ejemplo 3: Laberinto 3D Multi-nivel ⭐ NUEVO
+### 🎲 Ejemplo 3: Laberinto 3D Multi-nivel
 
 - **Nodos esféricos en 3D** con Three.js
 - **Múltiples niveles** (3-5 pisos verticales)
@@ -38,6 +40,22 @@ Aplicación interactiva que demuestra visualmente el algoritmo de **búsqueda bi
 - **Flechas 3D direccionales** con colores
 - **OrbitControls:** Rotar, zoom, pan de cámara
 - **Tamaños:** 5x5x3 (75 nodos), 7x7x3 (147 nodos), 9x9x5 (405 nodos)
+
+### 📊 Ejemplo 4: Análisis de Ventas ⭐ NUEVO
+
+- **Procesamiento bidireccional de datos** desde fecha inicio y fin
+- **Pipeline de 11 nodos** visualizado en 3D
+- **Web Workers simulados** para procesamiento paralelo
+- **Generación de datos:** 100-300 registros de ventas aleatorios
+- **Gráficos interactivos:** Chart.js con 5 tipos de visualización
+  - Top productos (barras)
+  - Categorías (dona)
+  - Regiones (polar)
+  - Tendencia temporal (línea)
+  - Mejores vendedores (barras horizontales)
+- **Métricas en tiempo real:** Ingresos, ventas, ticket promedio
+- **Logs detallados:** Seguimiento del flujo bidireccional
+- **Visualización dual:** Árbol 3D + Análisis estadístico lado a lado
 
 ## 🚀 Inicio Rápido
 
@@ -85,13 +103,22 @@ Página principal con:
 - Visualización bidireccional
 - Estadísticas comparativas
 
-### Laberinto 3D (/maze-3d) ⭐ NUEVO
+### Laberinto 3D (/maze-3d)
 
 - Nodos esféricos en espacio 3D
 - Múltiples niveles verticales
 - Conexiones en 6 direcciones
 - Interacción con Raycasting
 - Flechas y líneas de conexión
+
+### Análisis de Ventas (/sales-analysis) ⭐ NUEVO
+
+- Procesamiento bidireccional de datos
+- Árbol 3D del flujo de análisis
+- Gráficos estadísticos interactivos
+- Análisis de productos, categorías y regiones
+- Tendencias temporales
+- Rankings de vendedores
 
 ## 🧮 Algoritmo de Búsqueda Bidireccional
 
@@ -136,12 +163,14 @@ Para `b=3` y `d=10`:
 - **[CARACTERISTICAS.md](./CARACTERISTICAS.md)** - Lista completa de características
 - **[NUEVAS-FUNCIONES.md](./NUEVAS-FUNCIONES.md)** - Documentación de flechas y logs
 - **[LABERINTO-EXPLICACION.md](./LABERINTO-EXPLICACION.md)** - Explicación detallada del laberinto 2D
-- **[LABERINTO-3D-EXPLICACION.md](./LABERINTO-3D-EXPLICACION.md)** - Explicación del laberinto 3D multi-nivel ⭐
+- **[LABERINTO-3D-EXPLICACION.md](./LABERINTO-3D-EXPLICACION.md)** - Explicación del laberinto 3D multi-nivel
+- **[SALES-ANALYSIS-DOC.md](./SALES-ANALYSIS-DOC.md)** - Documentación del análisis de ventas ⭐ NUEVO
 
 ## 🛠️ Tecnologías Utilizadas
 
 - **Angular 20.2.0** - Framework principal
 - **Three.js 0.180.0** - Visualización 3D
+- **Chart.js** - Gráficos estadísticos interactivos
 - **TypeScript 5.9.2** - Lenguaje de programación
 - **RxJS Signals** - Gestión de estado reactivo
 - **Canvas API** - Renderizado 2D para el laberinto
@@ -172,6 +201,8 @@ ng test
 3. **Robótica** - Navegación en almacenes automatizados
 4. **Redes de transporte** - Planificación de rutas
 5. **Sistemas de evacuación** - Rutas de escape en edificios
+6. **Análisis de datos** - Procesamiento bidireccional de logs y transacciones ⭐
+7. **Data Mining** - Exploración de datasets desde ambos extremos temporales ⭐
 
 ## 📖 Referencias
 

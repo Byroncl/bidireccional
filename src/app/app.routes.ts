@@ -24,4 +24,11 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./features/maze-3d/maze-3d.component').then((m) => m.Maze3dComponent),
   },
+  {
+    path: 'sales-analysis',
+    loadComponent: () =>
+      import('./features/sales-analysis/sales-analysis.component').then(
+        (m) => m.SalesAnalysisComponent
+      ),
+  },
 ];

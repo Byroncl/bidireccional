@@ -500,5 +500,24 @@ export class HomeComponent {
         'Visualización de conexiones opcional',
       ],
     },
+    {
+      id: 'sales-analysis',
+      title: 'Análisis de Ventas (Data Mining)',
+      description:
+        'Aplica búsqueda bidireccional al análisis de datos de ventas. Procesa información desde fecha inicio y fin simultáneamente, visualizando el flujo con nodos 3D y gráficos estadísticos.',
+      icon: '📊',
+      route: '/sales-analysis',
+      color: '#ff00ff',
+      features: [
+        'Procesamiento bidireccional de datos',
+        'Árbol 3D del flujo de análisis',
+        'Gráficos interactivos (Chart.js)',
+        'Análisis de ventas por productos',
+        'Métricas por categorías y regiones',
+        'Tendencias temporales',
+        'Top vendedores',
+        'Logs detallados del proceso',
+      ],
+    },
   ];
 }
