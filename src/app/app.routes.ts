@@ -3,8 +3,7 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'bidirectional-search-3d',
-    pathMatch: 'full',
+    loadComponent: () => import('./features/home/home.component').then((m) => m.HomeComponent),
   },
   {
     path: 'bidirectional-search-3d',
@@ -12,5 +11,17 @@ export const routes: Routes = [
       import('./features/bidirectional-search-3d/bidirectional-search-3d.component').then(
         (m) => m.BidirectionalSearch3dComponent
       ),
+  },
+  {
+    path: 'maze-bidirectional',
+    loadComponent: () =>
+      import('./features/maze-bidirectional/maze-bidirectional.component').then(
+        (m) => m.MazeBidirectionalComponent
+      ),
+  },
+  {
+    path: 'maze-3d',
+    loadComponent: () =>
+      import('./features/maze-3d/maze-3d.component').then((m) => m.Maze3dComponent),
   },
 ];
